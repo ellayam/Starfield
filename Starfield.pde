@@ -21,7 +21,12 @@ void draw() {
 
 void mousePressed() {
   background(0);
-  redraw();
+  for(int i = 0; i < 797; i++) {
+    lisa[i] = new Particle();
+  }
+  for(int i = 797; i < lisa.length; i++) {
+    lisa[i] = new Oddball();
+  }
 }
 
 class Particle {
