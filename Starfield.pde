@@ -19,6 +19,16 @@ void draw() {
   }
 }
 
+void mousePressed() {
+  background(0);
+  for(int i = 0; i < 797; i++) {
+    lisa[i] = new Particle();
+  }
+  for(int i = 797; i < lisa.length; i++) {
+    lisa[i] = new Oddball();
+  }
+}
+
 class Particle {
   double myX, myY, mySize, mySpeed, myAngle;
   int myColor;
@@ -27,10 +37,11 @@ class Particle {
     myX = 200;
     myY = 200;
     myColor = color((int)(Math.random()*100)+100,(int)(Math.random()*100)+100,(int)(Math.random()*100)+100);
+    //mySize = (int)(Math.random()*10)+5;
+    //mySize = 
     mySize = (Math.random()*6)+1;
     mySpeed = (Math.random()*4);
     myAngle = (Math.random()*(2*Math.PI));
-    System.out.println(mySize);
   }
   
   void move() {
