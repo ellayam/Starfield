@@ -27,8 +27,6 @@ class Particle {
     myX = 200;
     myY = 200;
     myColor = color((int)(Math.random()*100)+100,(int)(Math.random()*100)+100,(int)(Math.random()*100)+100);
-    //mySize = (int)(Math.random()*10)+5;
-    //mySize = 
     mySize = (Math.random()*6)+1;
     mySpeed = (Math.random()*4);
     myAngle = (Math.random()*(2*Math.PI));
@@ -54,7 +52,6 @@ class Oddball extends Particle {
     mySize = (Math.random()*10)+50;
     mySpeed = (Math.random()*2)+0.001;
     myAngle = (Math.random()*(2*Math.PI));
-    System.out.println(mySize);
   }
   
   void show() {
