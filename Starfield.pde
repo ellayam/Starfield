@@ -60,7 +60,7 @@ class Oddball extends Particle {
     myY = 200;
     myColor = color((int)(Math.random()*100)+150,(int)(Math.random()*100)+150,(int)(Math.random()*100)+150);
     mySize = (Math.random()*10)+50;
-    mySpeed = (Math.random()*2)+0.001;
+    mySpeed = (Math.random()*2)+0.01;
     myAngle = (Math.random()*(2*Math.PI));
   }
   
